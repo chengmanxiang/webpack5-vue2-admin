@@ -1,0 +1,6 @@
+config/*.js
+src/assets
+public
+static
+src
+dist
