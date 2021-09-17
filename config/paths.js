@@ -16,4 +16,6 @@ module.exports = {
   // Static files that get copied to build folder big photo
   icons: path.resolve(__dirname, '../src/icons'),
 
+  components: path.resolve(__dirname, '../src/components'),
+
 }
