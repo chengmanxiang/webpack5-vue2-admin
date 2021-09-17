@@ -84,10 +84,27 @@ module.exports = {
       },
 
       // Fonts and SVGs: Inline files
-      { test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: 'asset/inline' },
+      { test: /\.(woff(2)?|eot|ttf|otf|)$/, type: 'asset/inline' },
 
       // scss css 
       // { test: /\.css$/, use: ['style-loader', 'css-loader'] },
+      // svg
+      // {
+      //   test: /\.(svg)$/, exclude: [
+      //     paths.icons
+      //   ]
+      // },
+       // svg
+       {
+        test: /\.svg$/, include: [
+          paths.icons
+        ],
+        use: [{
+          loader: 'svg-sprite-loader', options: {
+            symbolId: 'icon-[name]'
+          }
+        }]
+      },
     ],
   },
 
