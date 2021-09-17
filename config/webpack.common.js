@@ -79,7 +79,7 @@ module.exports = {
       // Images: Copy image files to build folder
       {
         test: /\.(?:ico|gif|png|jpg|jpeg)$/i, type: 'asset/resource', generator: {
-          filename: 'img/[name].[hash:6][ext]',
+          filename: 'static/img/[name].[hash:6][ext]',
         }
       },
 
